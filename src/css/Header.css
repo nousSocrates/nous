@@ -1,29 +1,127 @@
+/* Base styles for header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #282c34;
-    color: #fff;
-  }
-  
-  .logo h1 {
-    font-size: 1.5rem;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #282c34;
+  color: #fff;
+  position: sticky; /* Keep header visible while scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+    display: none; /* Hide links by default for small screens */
+    flex-direction: column;
+    background-color: #282c34;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    text-align: center;
   }
-  
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
+
   .nav-links a {
-    color: #61dafb;
-    text-decoration: none;
-    font-weight: 500;
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
   }
-  
-  .nav-links a:hover {
-    color: #fff;
+
+  .nav-links a:last-child {
+    border-bottom: none;
   }
-  
+}
+
+
+/* Adjust hamburger position and style */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+  position: absolute; /* Allow it to float independently */
+  right: 2rem; /* Float it to the right */
+  top: 1.5rem;
+  z-index: 1100;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #61dafb;
+  transition: all 0.3s ease;
+}
+
+/* Transform the hamburger into a cross when active */
+.hamburger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open div:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show hamburger on small screens */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #282c34;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .nav-links a {
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+}

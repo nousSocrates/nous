@@ -1,23 +1,23 @@
 import React from "react";
-import "./Projects.css";
+import "./css/Projects.css";
 
 const projects = [
   {
     title: "Personal Portfolio",
     description: "Modern portfolio website built with React and deployed on Vercel.",
-    image: "portfolio.png",
+    image: "/static/images/portfolio.png",
     link: "https://portfolio.example.com",
   },
   {
     title: "Socrates Schools Website",
     description: "An educational website focusing on music and coding.",
-    image: "socrates-schools.png",
-    link: "https://socrates.example.com",
+    image: "/static/images/socrates-schools.png",
+    link: "https://socratesschools.co.ke",
   },
   {
     title: "E-commerce Platform",
     description: "Responsive online store using Django and React.",
-    image: "ecommerce.png",
+    image: "/static/images/ecommerce.png",
     link: "https://ecommerce.example.com",
   },
 ];
@@ -44,3 +44,5 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+
+
