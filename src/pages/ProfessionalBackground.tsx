@@ -1,37 +1,63 @@
+
 import React from "react";
-import "./ProfessionalBackground.css";
+import { motion } from "framer-motion";
+import "../css/timeline.css";
 
 const professionalEvents = [
   {
-    year: "2023 - Present",
-    title: "Junior Secondary Teacher",
-    description: "Teaching students, developing lesson plans, and mentoring young learners in music and coding.",
+    icon: "🏫",
+    Institution: "Moi University",
+    year: "2014-2018",
+    description: "Bachelor of Arts with Education. Specialized in Music and English, achieving a Distinction in ABRSM Music Theory.",
   },
   {
-    year: "2024",
-    title: "Founder, Socrates Schools",
-    description: "Established a school focusing on music and coding education for young learners.",
+    icon: "🎓",
+    Institution: "Kenyatta University",
+    year: "2019-2021",
+    description: "Postgraduate Diploma in Education, focusing on curriculum design and educational leadership.",
   },
   {
-    year: "2024",
-    title: "Freelance Web Developer",
-    description: "Developed modern, responsive websites using React and Django for clients and personal projects.",
+    icon: "🎼",
+    Institution: "ABRSM (Associated Board of the Royal Schools of Music)",
+    year: "2021",
+    description: "Achieved a Distinction in Music Theory Grade 8, with advanced skills in composition and analysis.",
+  },
+  {
+    icon: "💻",
+    Institution: "Udemy",
+    year: "2022",
+    description: "Completed advanced courses in Web Development, specializing in React and Django.",
+  },
+  {
+    icon: "📚",
+    Institution: "Coursera",
+    year: "2023",
+    description: "Earned certifications in Python for Everybody and Full-Stack Development.",
   },
 ];
 
 const ProfessionalBackground: React.FC = () => {
   return (
-    <section className="professional-background">
+    <section className="timeline-background">
       <h2>Professional Background</h2>
       <div className="timeline">
         {professionalEvents.map((event, index) => (
-          <div key={index} className="timeline-event">
+          <motion.div
+            key={index}
+            className={`timeline-event ${index % 2 === 0 ? "left" : "right"}`}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, delay: index * 1 }}
+          >
             <div className="timeline-content">
-              <h3>{event.year}</h3>
-              <h4>{event.title}</h4>
+              <motion.div className="icon" whileHover={{ scale: 1.2 }}>
+                <span>{event.icon}</span>
+              </motion.div>
+              <h3>{event.Institution}</h3>
+              <small>{event.year}</small>
               <p>{event.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
@@ -39,3 +65,5 @@ const ProfessionalBackground: React.FC = () => {
 };
 
 export default ProfessionalBackground;
+
+

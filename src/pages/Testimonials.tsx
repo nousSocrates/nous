@@ -1,31 +1,51 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Carousel.css";
+import "../css/testimonials.css";
 
 const testimonials = [
   {
     name: "John Doe",
     feedback: "The coding lessons were outstanding! Highly recommend Socrates Schools.",
-    image: "john-doe.jpg",
+    image: "/static/images/madamjulie.png",
   },
   {
     name: "Jane Smith",
     feedback: "Learning music here was a game-changer for my child. Thank you!",
-    image: "jane-smith.jpg",
+    image: "/static/images/madamjulie.png",
   },
   {
     name: "Emily White",
     feedback: "Amazing experience! The personalized attention made all the difference.",
-    image: "emily-white.jpg",
+    image: "/static/images/madamjulie.png",
   },
   {
     name: "Michael Brown",
     feedback: "Great place to learn both coding and music. Very professional.",
-    image: "michael-brown.jpg",
+    image: "/static/images/madamjulie.png",
+  },
+  {
+    name: "John Doe",
+    feedback: "The coding lessons were outstanding! Highly recommend Socrates Schools.",
+    image: "/static/images/madamjulie.png",
+  },
+  {
+    name: "Jane Smith",
+    feedback: "Learning music here was a game-changer for my child. Thank you!",
+    image: "/static/images/madamjulie.png",
+  },
+  {
+    name: "Emily White",
+    feedback: "Amazing experience! The personalized attention made all the difference.",
+    image: "/static/images/madamjulie.png",
+  },
+  {
+    name: "Michael Brown",
+    feedback: "Great place to learn both coding and music. Very professional.",
+    image: "/static/images/madamjulie.png",
   },
 ];
 
-const Carousel: React.FC = () => {
+const Testimonials: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -34,13 +54,13 @@ const Carousel: React.FC = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
           slidesToShow: 1,
         },
@@ -66,4 +86,4 @@ const Carousel: React.FC = () => {
   );
 };
 
-export default Carousel;
+export default Testimonials;
