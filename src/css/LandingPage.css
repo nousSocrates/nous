@@ -1,0 +1,35 @@
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #282c34, #61dafb);
+    color: #fff;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .content span {
+    color: #61dafb;
+  }
+  
+  .content .socials {
+    margin-top: 1rem;
+  }
+  
+  .content .socials a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .content .socials a:hover {
+    color: #282c34;
+    background-color: #61dafb;
+    border-radius: 50%;
+    padding: 0.2rem;
+  }
+  
