@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import { FaWhatsapp, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import "../css/LandingPage.css";
 
@@ -9,7 +9,7 @@ const LandingPage: React.FC = () => {
       <div className="content">
         <h1>
           Hello, I'm{" "}
-          <span>
+          {/* <span>
             <Typical
               loop={Infinity}
               wrapper="span"
@@ -21,7 +21,7 @@ const LandingPage: React.FC = () => {
                 "Founder of Socrates Schools", 2000,
               ]}
             />
-          </span>
+          </span> */}
         </h1>
         <p>
           A Junior School Teacher, Music & Coding Educator, Web Developer and
