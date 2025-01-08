@@ -3,13 +3,15 @@ import React from "react";
 import { FaWhatsapp, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import "../css/LandingPage.css";
 
+
+
 const LandingPage: React.FC = () => {
   return (
     <section className="landing-page">
       <div className="content">
-        <h1>
+        {/* <h1>
           Hello, I'm{" "}
-          {/* <span>
+           <span>
             <Typical
               loop={Infinity}
               wrapper="span"
@@ -21,8 +23,9 @@ const LandingPage: React.FC = () => {
                 "Founder of Socrates Schools", 2000,
               ]}
             />
-          </span> */}
-        </h1>
+          </span> 
+        </h1> */}
+        <h1 >Meet <span>nousSocrates</span></h1>
         <p>
           A Junior School Teacher, Music & Coding Educator, Web Developer and
           Founder of Socrates Schools.

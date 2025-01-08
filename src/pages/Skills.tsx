@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import "../css/Skills.css";
 
 const skills = [
+  { name: "HTML", icon: "🔤", level: 95, color: "#E34F26" },
+  { name: "CSS", icon: "🎨", level: 88, color: "#1572B6" },
   { name: "JavaScript", icon: "🟨", level: 85, color: "#F7DF1E" },
   { name: "React", icon: "⚛️", level: 80, color: "#61DAFB" },
   { name: "Python", icon: "🐍", level: 90, color: "#306998" },
   { name: "Django", icon: "🌱", level: 75, color: "#092E20" },
-  { name: "HTML", icon: "🔤", level: 95, color: "#E34F26" },
-  { name: "CSS", icon: "🎨", level: 88, color: "#1572B6" },
   { name: "Music Composition", icon: "🎼", level: 95, color: "#A020F0" },
   { name: "Teaching", icon: "📘", level: 88, color: "#008080" },
 ];

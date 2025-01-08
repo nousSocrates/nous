@@ -8,12 +8,20 @@ const Header: React.FC = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const logo_text = {
+    background: "linear-gradient(to top, #ffe838, #fd57bf)",
+    "font-family": ' "Courier New", Courier',
+    "-webkit-background-clip": "text",
+    "-webkit-text-fill-color": "transparent",
+    "user-select": "none",
+   
+  };
 
   return (
     <header className="header">
       <div className="logo">
         <Link to="/">
-          <h1>nousSocrates</h1>
+          <h1 style={logo_text}>nousSocrates</h1>
         </Link>
       </div>
       <div
