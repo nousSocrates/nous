@@ -6,7 +6,7 @@ const projects = [
     title: "Personal Portfolio",
     description: "Modern portfolio website built with React and deployed on Vercel.",
     image: "/static/images/felo.jpg",
-    link: "https://portfolio.example.com",
+    link: "https://socratesschools.co.ke",
   },
   {
     title: "Socrates Schools Website",
@@ -18,13 +18,13 @@ const projects = [
     title: "E-commerce Platform",
     description: "Responsive online store using Django and React.",
     image: "/static/images/handson.jpg",
-    link: "https://ecommerce.example.com",
+    link: "https://socratesschools.co.ke",
   },
   {
     title: "Comprehensive School Website",
     description: "Responsive online store using Django and React.",
     image: "/static/images/orchetra.jpg",
-    link: "https://ecommerce.example.com",
+    link: "https://socratesschools.co.ke",
   },
 ];
 

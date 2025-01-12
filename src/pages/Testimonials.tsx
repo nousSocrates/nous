@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "John Doe",
     feedback: "The coding lessons were outstanding! Highly recommend Socrates Schools.",
-    image: "/static/images/madamjulie.png",
+    image: "/static/images/felo.jpg",
   },
   {
     name: "Jane Smith",
@@ -16,17 +16,17 @@ const testimonials = [
   {
     name: "Emily White",
     feedback: "Amazing experience! The personalized attention made all the difference.",
-    image: "/static/images/madamjulie.png",
+    image: "/static/images/socratespurple.png",
   },
   {
     name: "Michael Brown",
     feedback: "Great place to learn both coding and music. Very professional.",
-    image: "/static/images/madamjulie.png",
+    image: "/static/images/nousonphone.png",
   },
   {
     name: "John Doe",
     feedback: "The coding lessons were outstanding! Highly recommend Socrates Schools.",
-    image: "/static/images/madamjulie.png",
+    image: "/static/images/felo.jpg",
   },
   {
     name: "Jane Smith",
@@ -36,12 +36,12 @@ const testimonials = [
   {
     name: "Emily White",
     feedback: "Amazing experience! The personalized attention made all the difference.",
-    image: "/static/images/madamjulie.png",
+    image: "/static/images/socratespurple.png",
   },
   {
     name: "Michael Brown",
     feedback: "Great place to learn both coding and music. Very professional.",
-    image: "/static/images/madamjulie.png",
+    image: "/static/images/nousonphone.png",
   },
 ];
 
